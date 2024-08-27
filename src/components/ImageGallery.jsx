@@ -11,7 +11,7 @@ const ImageGallery = () => {
     useEffect(() => {
         const fetchImages = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/images');
+                const response = await axios.get('https://api.seavseyla.store/images');
                 setImages(response.data);
             } catch (error) {
                 console.error('Error fetching images:', error);
