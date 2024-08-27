@@ -37,7 +37,7 @@ const UploadForm = ({ onUpload }) => {
         formData.append('userId', userId);
 
         try {
-            const response = await axios.post('https://api.seavseyla.store/upload', formData, {
+            const response = await axios.post('http://54.196.140.55:3000/upload', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
